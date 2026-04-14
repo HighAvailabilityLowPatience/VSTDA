@@ -1,3 +1,8 @@
-const server = require('./app');
+const express = require('express');
+const app = require('./app');
 
-// write your code here
+app.listen(8484, () => {
+    console.log('Server running on port 8484');
+});
+
+module.exports = app;
